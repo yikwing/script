@@ -1,0 +1,6 @@
+#!name=wechat
+#!desc=wechat分流
+
+
+[Rule]
+RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/WeChat.list,direct
