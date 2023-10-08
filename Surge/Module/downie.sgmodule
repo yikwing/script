@@ -1,0 +1,9 @@
+#!name=downie4
+#!desc=解锁会员
+
+[Script]
+Paddle_Verify = type=http-request,pattern=^https://v3.paddleapi.com/3.2/license/verify,requires-body=1,max-size=0,debug=1,script-path=https://raw.githubusercontent.com/tianguzhe/script/main/Surge/JS/downie.js
+Paddle_Activate = type=http-request,pattern=^https://v3.paddleapi.com/3.2/license/activate,requires-body=1,max-size=0,debug=1,script-path=https://raw.githubusercontent.com/tianguzhe/script/main/Surge/JS/downie.js
+
+[MITM]
+hostname = %APPEND% *.paddleapi.com
