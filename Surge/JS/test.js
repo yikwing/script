@@ -1,9 +1,9 @@
-let headers = $request.headers;
+let headers = $response.headers;
 
 headers["user-agent"] = "Surge";
 
-let body = $request.body.split("&");
+let body = $response.body;
 
-console.log("=========\n + body + \n=========");
+console.log("======\n" + body + "\n======");
 
-$done({ headers });
+$done({ headers, body });
