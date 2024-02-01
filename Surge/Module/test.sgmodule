@@ -1,0 +1,8 @@
+#!name=test
+#!desc=test
+
+[Script]
+http-test = type=http-request,pattern=^https://httpbin.org/get,requires-body=1,max-size=0,debug=1,script-path=https://raw.githubusercontent.com/tianguzhe/script/main/Surge/JS/test.js
+
+[MITM]
+hostname = %APPEND% httpbin.org
