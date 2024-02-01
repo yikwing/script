@@ -3,8 +3,11 @@ let headers = $response.headers;
 headers["user-agent"] = "Surge";
 
 let body = $response.body;
-body["User-Agent"] = "quanx";
+
+let tmp = JSON.parse(body);
+
+tmp["User-Agent"] = "quanx";
 
 console.log("==================\n\n" + body + "\n=================");
 
-$done({ headers, body });
+$done({ headers, body: JSON.stringify(tmp) });
