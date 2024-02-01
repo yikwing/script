@@ -1,5 +1,9 @@
 #!name=downie4
+<<<<<<< HEAD
 #!desc=解锁会员
+=======
+#!desc=解锁会员 B7EE3D3C-B7EE3D3C-B7EE3D3C-B7EE3D3C-B7EE3D3C
+>>>>>>> a98e06ce161320d94c762eba99c2e00b7eb816e2
 
 [Script]
 Paddle_Verify = type=http-request,pattern=^https://v3.paddleapi.com/3.2/license/verify,requires-body=1,max-size=0,debug=1,script-path=https://raw.githubusercontent.com/tianguzhe/script/main/Surge/JS/downie.js
