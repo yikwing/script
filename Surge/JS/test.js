@@ -1,4 +1,7 @@
 let headers = $request.headers;
-headers["X-Modified-By"] = "Surge";
+
+console.log("headers: " + JSON.stringify(headers));
+
+headers["user-agent"] = "Surge";
 
 $done({ headers });
