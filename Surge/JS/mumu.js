@@ -6,8 +6,10 @@ let body = $response.body;
 
 let tmp = JSON.parse(body);
 
+console.log("==================\n\n" + body + "\n=================");
+
 tmp["code"]["data"]["current_device"]["trial_end_at"] = 1712246399;
 
-console.log("==================\n\n" + body + "\n=================");
+console.log("==================\n\n" + tmp + "\n=================");
 
 $done({ headers, body: JSON.stringify(tmp) });
