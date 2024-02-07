@@ -1,16 +1,18 @@
-// let headers = $response.headers;
+const updateResponse = (response) => {
+  const parsedResponse = JSON.parse(response.body);
+  parsedResponse.data.current_device.trial_end_at = 1712246399;
+  parsedResponse.data.current_device.trial_status = 1;
+  return JSON.stringify(parsedResponse);
+};
 
-// headers["user-agent"] = "Surge";
+const logResponse = (response) => {
+  console.log(`==================\n\n${response}\n=================`);
+};
 
-let body = $response.body;
+const response = $response;
+logResponse(response.body);
 
-let tmp = JSON.parse(body);
+const updatedResponse = updateResponse(response);
+logResponse(updatedResponse);
 
-console.log("==================\n\n" + body + "\n=================");
-
-tmp["data"]["current_device"]["trial_end_at"] = 1712246399;
-tmp["data"]["current_device"]["trial_status"] = 1;
-
-console.log("==================\n\n" + tmp + "\n=================");
-
-$done({ body: JSON.stringify(tmp) });
+$done({ body: updatedResponse });
