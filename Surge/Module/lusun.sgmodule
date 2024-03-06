@@ -1,0 +1,8 @@
+#!name=test
+#!desc=test
+
+[Script]
+script3 = type=http-response,pattern=^https://api.lusun.com/api/v2/get_user_info,script-path=https://raw.githubusercontent.com/yikwing/script/main/Surge/JS/lusun.js,max-size=16384,debug=true,requires-body=true
+
+[MITM]
+hostname = %APPEND% api.lusun.com
