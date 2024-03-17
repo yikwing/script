@@ -8,7 +8,7 @@ const updateResponse = (response) => {
 };
 
 const logResponse = (response) => {
-  console.log(`==================\n\n${response}\n=================`);
+  console.log(`\n==================\n${response}\n=================\n`);
 };
 
 const response = $response;
