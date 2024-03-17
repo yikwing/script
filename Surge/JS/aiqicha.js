@@ -1,10 +1,9 @@
 const updateResponse = (response) => {
   const parsedResponse = JSON.parse(response.body);
-  parsedResponse.svip = {
-    status: 1,
-    startTime: "2023-01-20",
-    endTime: "2099-12-31",
-  };
+
+  parsedResponse.data.svip.status = 1;
+  parsedResponse.data.svip.endTime = "2024-12-31";
+
   return JSON.stringify(parsedResponse);
 };
 
