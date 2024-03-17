@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "*.sgmodule": "ini"
+  },
+  "editor.wordWrap": "on",
+  "files.eol": "auto"
+}
