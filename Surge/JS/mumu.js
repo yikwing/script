@@ -8,9 +8,9 @@ const updateResponse = (response) => {
 };
 
 const logResponse = (tag, response) => {
-  console.log(`==============  ${tag} start  =====================`);
-  console.log(`${response}`);
-  console.log(`==============  ${tag}  end   =====================`);
+  console.log(`\n==============  ${tag} start  =====================\n`);
+  console.log(`${response}\n`);
+  console.log(`==============  ${tag}  end   =====================\n`);
 };
 
 const response = $response;
