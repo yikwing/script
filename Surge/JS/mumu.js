@@ -7,14 +7,16 @@ const updateResponse = (response) => {
   return JSON.stringify(parsedResponse);
 };
 
-const logResponse = (response) => {
-  console.log(`\n==================\n${response}\n=================\n`);
+const logResponse = (tag, response) => {
+  console.log(`==============  ${tag} start  =====================`);
+  console.log(`${response}`);
+  console.log(`==============  ${tag}  end   =====================`);
 };
 
 const response = $response;
-logResponse(response.body);
+logResponse("original", response.body);
 
 const updatedResponse = updateResponse(response);
-logResponse(updatedResponse);
+logResponse("hook", updatedResponse);
 
 $done({ body: updatedResponse });
