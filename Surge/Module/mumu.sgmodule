@@ -1,5 +1,5 @@
 #!name=mumupro
-#!desc=mumupro
+#!desc=mumupro 仅适用于1.3.6未验证签名版本
 
 [Script]
 mumupro = type=http-response,pattern=^https://api-pro.mumu.163.com/api/v1/user/info,script-path=https://raw.githubusercontent.com/yikwing/script/main/Surge/JS/mumu.js,max-size=16384,debug=true,requires-body=true
