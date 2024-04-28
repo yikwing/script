@@ -4,5 +4,10 @@
 [Script]
 mumupro = type=http-response,pattern=^https://api-pro.mumu.163.com/api/v1/user/info,script-path=https://raw.githubusercontent.com/yikwing/script/main/Surge/JS/mumu.js,max-size=16384,debug=true,requires-body=true
 
+[Rule]
+# 匹配mumu更新
+URL-REGEX,mumu.nie.netease.com/api/mac/pro/appcast/remind,REJECT
+URL-REGEX,mumu.nie.netease.com/api/mac/pro/appcast/force,REJECT
+
 [MITM]
 hostname = %APPEND% api-pro.mumu.163.com
