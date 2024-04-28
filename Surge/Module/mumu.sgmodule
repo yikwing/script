@@ -10,4 +10,4 @@ URL-REGEX,mumu.nie.netease.com/api/mac/pro/appcast/remind,REJECT
 URL-REGEX,mumu.nie.netease.com/api/mac/pro/appcast/force,REJECT
 
 [MITM]
-hostname = %APPEND% api-pro.mumu.163.com
+hostname = %APPEND% api-pro.mumu.163.com mumu.nie.netease.com
