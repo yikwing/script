@@ -1,0 +1,12 @@
+#!name=IPv6 Enabled
+#!desc=
+#!category=IPv6
+
+[General]
+ipv6 = true
+
+# > DNS 服务器
+dns-server = 2001:4860:4860::8888
+
+[Script]
+IPv6 Auto = type=event,event-name=network-changed,script-path=https://raw.githubusercontent.com/yikwing/script/main/Surge/JS/IPv6 Auto.js,engine=jsc
