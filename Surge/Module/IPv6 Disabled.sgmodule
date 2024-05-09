@@ -5,12 +5,5 @@
 [General]
 ipv6 = false
 
-# > DNS 服务器
-dns-server = 119.29.29.29, 223.5.5.5
-# > 加密 DNS 服务器
-encrypted-dns-server = https://doh.pub/dns-query, h3://dns.alidns.com/dns-query, quic://dns.alidns.com/dns-query
-# > 关闭 DOH 的服务端证书验证
-doh-skip-cert-verification = true
-
 [Script]
 IPv6 Auto = type=event,event-name=network-changed,script-path=https://raw.githubusercontent.com/yikwing/script/main/Surge/JS/IPv6 Auto.js,engine=jsc
