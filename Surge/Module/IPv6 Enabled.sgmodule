@@ -4,6 +4,7 @@
 
 [General]
 ipv6 = true
+dns-server = 2001:4860:4860::8888, 2606:4700:4700::1111
 
 [Script]
 IPv6 Auto = type=event,event-name=network-changed,script-path=https://raw.githubusercontent.com/yikwing/script/main/Surge/JS/IPv6 Auto.js,engine=jsc
