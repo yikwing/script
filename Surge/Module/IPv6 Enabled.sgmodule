@@ -4,6 +4,7 @@
 
 [General]
 ipv6 = true
+# > DNS 服务器
 dns-server = 2001:4860:4860::8888, 2606:4700:4700::1111
 
 [Script]
