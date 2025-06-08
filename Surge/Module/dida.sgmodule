@@ -1,0 +1,8 @@
+#!name=dida365.com
+#!desc=dida365.com
+
+[Script]
+lusun = type=http-response,pattern=^https://dida365.com/api/v2/user/status,script-path=https://raw.githubusercontent.com/yikwing/script/main/Surge/JS/dida.js,max-size=16384,debug=true,requires-body=true
+
+[MITM]
+hostname = %APPEND% dida365.com
