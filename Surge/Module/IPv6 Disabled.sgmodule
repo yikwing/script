@@ -1,9 +1,0 @@
-#!name=IPv6 Disabled
-#!desc=
-#!category=IPv6
-
-[General]
-ipv6 = false
-
-[Script]
-IPv6 Auto = type=event,event-name=network-changed,script-path=https://raw.githubusercontent.com/yikwing/script/main/Surge/JS/IPv6 Auto.js,engine=jsc
